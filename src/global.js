@@ -4,7 +4,6 @@ import { formatMessage } from 'umi-plugin-react/locale';
 import defaultSettings from './defaultSettings';
 
 window.React = React;
-
 const { pwa } = defaultSettings;
 // if pwa is true
 if (pwa) {
