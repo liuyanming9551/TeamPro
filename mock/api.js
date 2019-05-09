@@ -1,5 +1,25 @@
 import mockjs from 'mockjs';
 
+const testHome = [
+  {
+    name: '晓敏',
+    age: 18,
+    address: '北京市海淀区',
+    key: '1',
+  },
+  {
+    name: '李丽',
+    age: 18,
+    address: '北京市东城区',
+    key: '2',
+  },
+  {
+    name: '刘默',
+    age: 18,
+    address: '北京市朝阳区',
+    key: '3',
+  },
+];
 const titles = [
   'Alipay',
   'Angular',
@@ -322,6 +342,7 @@ function getFakeCaptcha(req, res) {
 }
 
 export default {
+  'GET /api/home': testHome,
   'GET /api/project/notice': getNotice,
   'GET /api/activities': getActivities,
   'POST /api/forms': (req, res) => {

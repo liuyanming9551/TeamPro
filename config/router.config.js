@@ -45,6 +45,20 @@ export default [
             name: 'workplace',
             component: './Dashboard/Workplace',
           },
+          {
+            path: '/dashboard/test',
+            icon: 'dashboard',
+            hideInMenu: false,
+            name: 'test',
+            component: './Dashboard/Test',
+          },
+          {
+            path: '/dashboard/home',
+            icon: 'dashboard',
+            hideInMenu: false,
+            name: 'home',
+            component: './Dashboard/Home',
+          },
         ],
       },
       // forms
@@ -287,6 +301,19 @@ export default [
             path: '/editor/koni',
             name: 'koni',
             component: './Editor/GGEditor/Koni',
+          },
+        ],
+      },
+      // text
+      {
+        name: 'text',
+        icon: 'question-circle',
+        path: '/match',
+        routes: [
+          {
+            path: '/match/text/:page',
+            name: 'text',
+            component: './Text/Text',
           },
         ],
       },

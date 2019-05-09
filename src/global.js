@@ -2,6 +2,7 @@ import React from 'react';
 import { notification, Button, message } from 'antd';
 import { formatMessage } from 'umi-plugin-react/locale';
 import defaultSettings from './defaultSettings';
+import './mouseClick';
 
 window.React = React;
 const { pwa } = defaultSettings;

@@ -33,6 +33,31 @@ ul,
 ol {
   list-style: none;
 }
+div.clickEffect {
+  position: fixed;
+  z-index: 999;
+  box-sizing: border-box;
+  border-color: slateblue;
+  border-style: solid;
+  border-radius: 50%;
+  animation: clickEffect 0.4s ease-out;
+}
+@keyframes clickEffect {
+  0% {
+    width: 0.5em;
+    height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
+    opacity: 1;
+  }
+  100% {
+    width: 7em;
+    height: 7em;
+    margin: -3.5em;
+    border-width: 0.3em;
+    opacity: 0.2;
+  }
+}
 
 @media (max-width: @screen-xs) {
   .ant-table {

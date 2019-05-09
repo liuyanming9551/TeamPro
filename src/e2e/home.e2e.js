@@ -4,7 +4,7 @@ describe('Homepage', () => {
   beforeAll(async () => {
     jest.setTimeout(1000000);
   });
-  it('it should have logo text', async () => {
+  it('it should have logo Text', async () => {
     await page.goto(BASE_URL);
     await page.waitForSelector('h1', {
       timeout: 5000,

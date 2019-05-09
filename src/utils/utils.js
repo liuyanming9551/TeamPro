@@ -186,7 +186,7 @@ export const importCDN = (url, name) =>
   new Promise(resolve => {
     const dom = document.createElement('script');
     dom.src = url;
-    dom.type = 'text/javascript';
+    dom.type = 'Text/javascript';
     dom.onload = () => {
       resolve(window[name]);
     };

@@ -1,6 +1,9 @@
 import { stringify } from 'qs';
 import request from '@/utils/request';
 
+export async function queryHome() {
+  return request('/api/home');
+}
 export async function queryProjectNotice() {
   return request('/api/project/notice');
 }

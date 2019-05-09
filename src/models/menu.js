@@ -16,7 +16,6 @@ function formatter(data, parentAuthority, parentName) {
       if (!item.name || !item.path) {
         return null;
       }
-
       let locale = 'menu';
       if (parentName && parentName !== '/') {
         locale = `${parentName}.${item.name}`;

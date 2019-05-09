@@ -162,7 +162,7 @@ class TagCloud extends Component {
               color="text"
               shape="cloud"
               tooltip={[
-                'text*value',
+                'Text*value',
                 function trans(text, value) {
                   return { name: text, value };
                 },
